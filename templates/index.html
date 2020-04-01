@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoToAI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body {
+          background: url('../static/bg2.png') no-repeat center center fixed;
+          
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;
+        }
+  
+      </style>
+
+
+
+
+    <script type=text/javascript>
+     
+    </script>
+   
+
+</head>
+<body>
+    <!-- 按扭區 -->
+    <div style="margin-left:50px;margin-bottom: 30px;">
+    <h1>GoToAI DEMO</h1>
+    <div class="container">
+      <form id="uploadform" method="POST" enctype='multipart/form-data' action="/upload"  class="well">
+        <input id="selectbutton" type='file' name='inputFile' multiple="multiple" onchange="this.form.submit();">
+        <button id="uploadbutton" type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+
+<div style="margin-top:30px">
+    <form  method="POST" enctype='multipart/form-data' action="/gotoAI-Lstm"  class="well">
+        
+        <button id="AIGOlstm" type="submit" class="btn btn-primary">gotoAI -- LSTM</button>
+        </form>
+</div>
+
+
+<div style="margin-top:30px">
+    <form  method="POST" enctype='multipart/form-data' action="/gotoAI_Kmeans"  class="well">
+        
+        <button id="AIGOkmean" type="submit" class="btn btn-primary">gotoAI -- Kmeans</button>
+        </form>
+</div>
+
+<div style="margin-top:30px">
+    <form  method="POST" enctype='multipart/form-data' action="/LinearRegression"  class="well">
+        
+        <button id="AIGOlinerRegression" type="submit" class="btn btn-primary">gotoAI -- linear Regression</button>
+        </form>
+</div>
+
+</div>
+
+
+<!-- 圖片區 -->
+
+
+<div>
+<img src="/plot.png" alt="lstm plot" style="width:500;height: 500;padding: 10px;"></img>
+
+<img src="/gotoAI_Kmeans.png"
+style="width:500;height: 500;padding: 10px;"
+alt="kmeans plot"
+>
+</div>
+<div>
+
+    <img src="/gotoAI_LinearRegression.png"
+    style="width:500;height: 500;padding: 10px;"
+    alt="LinearRegression plot"
+    >
+
+</div>
+
+
+</body>
+</html>
