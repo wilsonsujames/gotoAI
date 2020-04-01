@@ -1,0 +1,8 @@
+name,age,gender,state,num_children,num_pets
+john,23,M,california,2,4
+mary,30,F,dc,0,1
+peter,22,M,california,0,0
+jeff,19,M,dc,3,5
+bill,45,M,california,2,2
+lisa,33,F,texas,1,2
+jose,20,M,texas,4,3
